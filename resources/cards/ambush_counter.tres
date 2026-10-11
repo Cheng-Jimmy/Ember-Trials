@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="CardData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/cards/card_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "ambush_counter"
+display_name = "埋伏反击 / Ambush"
+card_type = 2
+energy_cost = 1
+description = "埋伏一轮后就绪。敌人攻击时可发动：该次攻击伤害 -5，反击 4 点伤害。"
+base_value = 0
+tags = PackedStringArray("COUNTER")
+effect_data = Array[Dictionary]([{"op": "counter", "reduction": 5, "damage": 4}])

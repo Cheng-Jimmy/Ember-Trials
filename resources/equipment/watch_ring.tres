@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="EquipmentData" load_steps=2 format=3]
+[ext_resource type="Script" path="res://scripts/equipment/equipment_data.gd" id="1"]
+[resource]
+script = ExtResource("1")
+id = "watch_ring"
+display_name = "守望指环"
+slot = 2
+description = "反击造成的伤害 +5。"
+counter_damage_bonus = 5

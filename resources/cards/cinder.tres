@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="CardData" load_steps=2 format=3]
+[ext_resource type="Script" path="res://scripts/cards/card_data.gd" id="1"]
+[resource]
+script = ExtResource("1")
+id = "cinder"
+display_name = "火花双斩 / Cinder"
+card_type = 0
+energy_cost = 1
+description = "造成 2 伤害 × 2，施加 1 层灼烧。装备逐段生效。"
+base_value = 2
+tags = PackedStringArray()
+duration_turns = -1
+effect_data = Array[Dictionary]([{"op": "damage", "hits": 2}, {"op": "burn", "amount": 1}])

@@ -1,0 +1,3 @@
+https://github.com/TakWolf/fusion-pixel-font/releases/download/2026.09.01/fusion-pixel-font-12px-proportional-ttf-v2026.09.01.zip
+https://github.com/TakWolf/fusion-pixel-font
+Unmodified. SIL OFL 1.1.

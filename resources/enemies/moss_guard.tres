@@ -1,0 +1,28 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3]
+[ext_resource type="Script" path="res://scripts/enemy/enemy_data.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/enemy/enemy_intent.gd" id="2"]
+
+[sub_resource type="Resource" id="i0"]
+script = ExtResource("2")
+display_name = "岩拳"
+damage = 7
+
+[sub_resource type="Resource" id="i1"]
+script = ExtResource("2")
+display_name = "苔石屏障"
+category = 1
+block = 7
+cleanse = 1
+
+[sub_resource type="Resource" id="i2"]
+script = ExtResource("2")
+display_name = "重拳"
+damage = 9
+
+[resource]
+script = ExtResource("1")
+display_name = "苔石守卫 / Moss Guard"
+max_hp = 42
+appearance = "golem"
+lore = "护盾吸收攻击；净化移除部分灼烧。利用防守回合准备反击。"
+intents = Array[ExtResource("2")]([SubResource("i0"), SubResource("i1"), SubResource("i2")])

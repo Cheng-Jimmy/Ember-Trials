@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3]
+[ext_resource type="Script" path="res://scripts/enemy/enemy_data.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/enemy/enemy_intent.gd" id="2"]
+
+[sub_resource type="Resource" id="i0"]
+script = ExtResource("2")
+display_name = "熔铁护盾"
+category = 1
+block = 9
+
+[sub_resource type="Resource" id="i1"]
+script = ExtResource("2")
+display_name = "炉心蓄力"
+category = 2
+next_attack_bonus = 2
+
+[sub_resource type="Resource" id="i2"]
+script = ExtResource("2")
+display_name = "炉锤三击"
+category = 3
+damage = 5
+hits = 3
+
+[sub_resource type="Resource" id="i3"]
+script = ExtResource("2")
+display_name = "王之重击"
+damage = 14
+
+[resource]
+script = ExtResource("1")
+display_name = "熔炉之王 / Furnace King"
+max_hp = 92
+appearance = "king"
+lore = "蓄力、护盾与三连重击交替。保留关键防御牌应对危险回合。"
+intents = Array[ExtResource("2")]([SubResource("i0"), SubResource("i1"), SubResource("i2"), SubResource("i3")])

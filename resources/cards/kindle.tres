@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="CardData" load_steps=2 format=3]
+[ext_resource type="Script" path="res://scripts/cards/card_data.gd" id="1"]
+[resource]
+script = ExtResource("1")
+id = "kindle"
+display_name = "引燃 / Kindle"
+card_type = 2
+energy_cost = 1
+description = "施加 4 层灼烧，揭示当前意图。灼烧在敌方行动后结算。"
+base_value = 0
+tags = PackedStringArray()
+duration_turns = -1
+effect_data = Array[Dictionary]([{"op": "burn", "amount": 4}, {"op": "reveal"}])

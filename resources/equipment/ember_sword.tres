@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="EquipmentData" load_steps=2 format=3]
+[ext_resource type="Script" path="res://scripts/equipment/equipment_data.gd" id="1"]
+[resource]
+script = ExtResource("1")
+id = "ember_sword"
+display_name = "余烬剑"
+slot = 0
+description = "攻击每次命中 +1。每回合第 2 张攻击牌施加 2 层灼烧。"
+attack_hit_bonus = 1
+attack_card_trigger = 2
+burn_on_trigger = 2

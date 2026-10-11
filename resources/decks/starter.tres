@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="DeckDefinition" load_steps=10 format=3]
+
+[ext_resource type="Script" path="res://scripts/cards/deck_definition.gd" id="1"]
+[ext_resource type="Resource" path="res://resources/cards/slash.tres" id="slash"]
+[ext_resource type="Resource" path="res://resources/cards/multi_slash.tres" id="multi_slash"]
+[ext_resource type="Resource" path="res://resources/cards/heavy_strike.tres" id="heavy_strike"]
+[ext_resource type="Resource" path="res://resources/cards/block.tres" id="block"]
+[ext_resource type="Resource" path="res://resources/cards/parry.tres" id="parry"]
+[ext_resource type="Resource" path="res://resources/cards/insight.tres" id="insight"]
+[ext_resource type="Resource" path="res://resources/cards/focus.tres" id="focus"]
+[ext_resource type="Resource" path="res://resources/cards/ambush_counter.tres" id="ambush_counter"]
+
+[resource]
+script = ExtResource("1")
+cards = [ExtResource("slash"), ExtResource("slash"), ExtResource("multi_slash"), ExtResource("heavy_strike"), ExtResource("block"), ExtResource("block"), ExtResource("parry"), ExtResource("insight"), ExtResource("focus"), ExtResource("ambush_counter")]

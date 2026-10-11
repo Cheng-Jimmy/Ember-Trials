@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="CardData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/cards/card_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "focus"
+display_name = "专注 / Focus"
+card_type = 2
+energy_cost = 0
+description = "本回合下一张攻击牌每次命中 +2，或下一张防御牌护盾 +2。触发一次后消失。"
+base_value = 2
+tags = PackedStringArray()
+effect_data = Array[Dictionary]([{"op": "focus"}])

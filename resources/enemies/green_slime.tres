@@ -1,0 +1,31 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3 uid="uid://cq8cbgr7lrajc"]
+
+[ext_resource type="Script" uid="uid://c1eii77rl88pu" path="res://scripts/enemy/enemy_data.gd" id="1"]
+[ext_resource type="Script" uid="uid://wfigq165ax4k" path="res://scripts/enemy/enemy_intent.gd" id="2"]
+
+[sub_resource type="Resource" id="strike"]
+script = ExtResource("2")
+display_name = "黏液打击 / Slime Strike"
+damage = 6
+
+[sub_resource type="Resource" id="guard"]
+script = ExtResource("2")
+category = 1
+display_name = "凝胶护盾 / Gel Guard"
+block = 5
+
+[sub_resource type="Resource" id="slam"]
+script = ExtResource("2")
+display_name = "重压 / Heavy Slam"
+damage = 10
+
+[sub_resource type="Resource" id="charge"]
+script = ExtResource("2")
+category = 2
+display_name = "蓄力 / Charge"
+next_attack_bonus = 3
+
+[resource]
+script = ExtResource("1")
+display_name = "翠绿史莱姆 / Green Slime"
+intents = Array[ExtResource("2")]([SubResource("strike"), SubResource("guard"), SubResource("slam"), SubResource("charge")])

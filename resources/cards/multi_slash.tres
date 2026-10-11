@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="CardData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/cards/card_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "multi_slash"
+display_name = "连斩 / Multi Slash"
+card_type = 0
+energy_cost = 1
+description = "造成 3 点伤害，共 2 次。"
+base_value = 3
+tags = PackedStringArray()
+effect_data = Array[Dictionary]([{"op": "damage", "hits": 2}])

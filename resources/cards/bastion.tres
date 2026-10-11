@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="CardData" load_steps=2 format=3]
+[ext_resource type="Script" path="res://scripts/cards/card_data.gd" id="1"]
+[resource]
+script = ExtResource("1")
+id = "bastion"
+display_name = "坚守阵地 / Bastion"
+card_type = 2
+energy_cost = 2
+description = "建立持续 3 轮的场地。后续玩家回合开始获得 3 护盾。"
+base_value = 0
+tags = PackedStringArray("FIELD")
+duration_turns = 3
+effect_data = Array[Dictionary]([{"op": "field", "block_each_turn": 3}])

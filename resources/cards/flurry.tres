@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="CardData" load_steps=2 format=3]
+[ext_resource type="Script" path="res://scripts/cards/card_data.gd" id="1"]
+[resource]
+script = ExtResource("1")
+id = "flurry"
+display_name = "疾风四连 / Flurry"
+card_type = 0
+energy_cost = 2
+description = "造成 2 伤害 × 4。适合配合专注和逐段装备加成。"
+base_value = 2
+tags = PackedStringArray()
+duration_turns = -1
+effect_data = Array[Dictionary]([{"op": "damage", "hits": 4}])

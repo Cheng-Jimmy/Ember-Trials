@@ -1,0 +1,35 @@
+[gd_resource type="Resource" script_class="EnemyData" format=3]
+[ext_resource type="Script" path="res://scripts/enemy/enemy_data.gd" id="1"]
+[ext_resource type="Script" path="res://scripts/enemy/enemy_intent.gd" id="2"]
+
+[sub_resource type="Resource" id="i0"]
+script = ExtResource("2")
+display_name = "双刃突袭"
+damage = 4
+hits = 2
+
+[sub_resource type="Resource" id="i1"]
+script = ExtResource("2")
+display_name = "磨刃"
+category = 2
+next_attack_bonus = 2
+
+[sub_resource type="Resource" id="i2"]
+script = ExtResource("2")
+display_name = "疾风三连"
+damage = 3
+hits = 3
+
+[sub_resource type="Resource" id="i3"]
+script = ExtResource("2")
+display_name = "侧身防守"
+category = 1
+block = 5
+
+[resource]
+script = ExtResource("1")
+display_name = "灰烬游侠 / Ash Raider"
+max_hp = 52
+appearance = "raider"
+lore = "多段攻击逐次触发护甲。蓄力后的攻击需要提前准备。"
+intents = Array[ExtResource("2")]([SubResource("i0"), SubResource("i1"), SubResource("i2"), SubResource("i3")])

@@ -1,0 +1,9 @@
+[gd_resource type="Resource" script_class="EquipmentData" load_steps=2 format=3]
+[ext_resource type="Script" path="res://scripts/equipment/equipment_data.gd" id="1"]
+[resource]
+script = ExtResource("1")
+id = "duelist_blade"
+display_name = "决斗短刃"
+slot = 0
+description = "每次攻击命中 +2；不施加额外灼烧。"
+attack_hit_bonus = 2

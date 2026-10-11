@@ -1,0 +1,17 @@
+# Godot generated caches (retain .gd.uid and asset import settings)
+.godot/
+.git/
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
+outputs/
+work/
+tests/artifacts/
+*.zip
+*.mp4
+*.avi
+*.pck
+*.exe
+*.env
+.env*

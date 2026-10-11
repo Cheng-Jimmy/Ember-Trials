@@ -1,0 +1,14 @@
+[gd_resource type="Resource" script_class="CardData" load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/cards/card_data.gd" id="1"]
+
+[resource]
+script = ExtResource("1")
+id = "insight"
+display_name = "洞察 / Insight"
+card_type = 2
+energy_cost = 1
+description = "揭示敌人当前完整意图，再随机抽 1 张牌进入额外手牌区。"
+base_value = 0
+tags = PackedStringArray()
+effect_data = Array[Dictionary]([{"op": "reveal"}, {"op": "draw", "count": 1}])

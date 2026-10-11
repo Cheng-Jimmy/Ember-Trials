@@ -1,0 +1,13 @@
+[gd_resource type="Resource" script_class="CardData" load_steps=2 format=3]
+[ext_resource type="Script" path="res://scripts/cards/card_data.gd" id="1"]
+[resource]
+script = ExtResource("1")
+id = "bulwark"
+display_name = "壁垒 / Bulwark"
+card_type = 1
+energy_cost = 2
+description = "获得 12 护盾。用于抵挡蓄力与多段攻击。"
+base_value = 12
+tags = PackedStringArray()
+duration_turns = -1
+effect_data = Array[Dictionary]([{"op": "block"}])
